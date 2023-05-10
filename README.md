@@ -9,6 +9,10 @@
 
 Please check [net6.0 branch](https://github.com/bervProject/docker-net-example/tree/net6.0).
 
+## .NET 7
+
+Please check [net7.0 branch](https://github.com/bervProject/docker-net-example/tree/net7.0).
+
 ## License
 
 MIT
