@@ -27,7 +27,7 @@ jobs:
     - name: Up Service
       run: docker compose up -d
     - name: Test Service
-      run: curl http://localhost:8000/weatherforecast
+      run: curl --location 'http://localhost:8000/WeatherForecast'
     - name: Stop Service
       if: always()
       run: docker compose down
