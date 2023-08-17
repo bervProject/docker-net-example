@@ -25,7 +25,7 @@ jobs:
     - name: Build Docker Image
       run: dotnet publish DockerNetExample --os linux --arch x64 /t:PublishContainer -c Release
     - name: Up Service
-      run: docker compose up -d
+      run: docker image ls && docker compose up -d
     - name: Test Service
       run: sleep 1s && curl --location 'http://localhost:8000/WeatherForecast'
     - name: Stop Service
