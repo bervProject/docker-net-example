@@ -27,7 +27,7 @@ jobs:
     - name: Up Service
       run: docker compose up -d
     - name: Test Service
-      run: curl --connect-timeout 5 --max-time 10 --retry 5 --retry-delay 0 --retry-max-time 60 --location 'http://localhost:8000/WeatherForecast'
+      run: curl --connect-timeout 5 --max-time 10 --retry 5 --retry-delay 0 --retry-all-errors --retry-max-time 60 --location 'http://localhost:8000/WeatherForecast'
     - name: Stop Service
       if: always()
       run: docker compose down
