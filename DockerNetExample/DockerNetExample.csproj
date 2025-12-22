@@ -9,8 +9,4 @@
     <ContainerImageTags>2.0.0;latest</ContainerImageTags>
   </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="10.1.0" />
-  </ItemGroup>
-
 </Project>
