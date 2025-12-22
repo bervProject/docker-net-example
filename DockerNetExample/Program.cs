@@ -1,4 +1,4 @@
-using Microsoft.OpenApi.Models;
+using Microsoft.AspNetCore.OpenApi;
 
 var builder = WebApplication.CreateBuilder(args);
 
